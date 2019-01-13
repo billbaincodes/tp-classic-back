@@ -1,7 +1,7 @@
 
 exports.seed = function(knex, Promise) {
   // Deletes ALL existing entries
-  return knex.raw('DELETE FROM "character"; ALTER SEQUENCE post_id_seq RESTART WITH 5;')
+  return knex.raw('DELETE FROM "character"; ALTER SEQUENCE character_id_seq RESTART WITH 5;')
     .then(function () {
       // Inserts seed entries
       return knex('character').insert([
