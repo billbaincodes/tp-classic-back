@@ -21,7 +21,8 @@ app.get('/', (req, res) => {
     posts: `http://localhost:${port}/posts`,
   }) :
   res.json({
-    posts: `deployed link`,
+    posts: `https://tp-classic-back.herokuapp.com/posts`,
+    characters: `https://tp-classic-back.herokuapp.com/characters`,
   })
 })
 
